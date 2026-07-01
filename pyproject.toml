@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "primekgagent"
+version = "0.1.0"
+description = "MCP adapter for PrimeKG-style biomedical knowledge graph files and APIs, with guarded metadata lookup and graph-resource summaries."
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [{name = "Baranzini Lab", email = "wanjun.gu@ucsf.edu"}]
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.11.2",
+    "httpx>=0.28.1",
+    "pydantic>=2.11.7",
+]
+
+[project.scripts]
+primekgagent = "primekgagent.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/primekgagent"]
+
+[tool.uv]
+constraint-dependencies = [
+    "cryptography<49; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+]

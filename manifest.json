@@ -1,0 +1,33 @@
+{
+  "name": "primekgagent",
+  "display_name": "PrimeKGAgent",
+  "description": "MCP adapter for PrimeKG-style biomedical knowledge graph files and APIs, with guarded metadata lookup and graph-resource summaries.",
+  "version": "0.1.0",
+  "entry_point": "primekgagent",
+  "repository": "https://github.com/BaranziniLab/PrimeKGAgent",
+  "license": "Apache-2.0",
+  "tools_count": 6,
+  "env_vars": [
+    {
+      "key": "PRIMEKG_BASE_URL",
+      "required": false,
+      "auto_propagate": true,
+      "description": "Optional PrimeKG API or raw data base URL",
+      "secret": false
+    },
+    {
+      "key": "PRIMEKG_LOG_LEVEL",
+      "required": false,
+      "auto_propagate": true,
+      "description": "Logging level",
+      "secret": false,
+      "default": "INFO"
+    }
+  ],
+  "skills": [
+    {
+      "name": "primekg-knowledge-graph",
+      "description": "Use PrimeKGAgent for PrimeKG biomedical graph workflows with provenance-first, guarded tool/API access."
+    }
+  ]
+}
