@@ -535,6 +535,8 @@ def _unnamed_write_routes(target: "Target", method: str, rel_path: str, read_pat
     method. A catch-all such as ``/**`` never names a write route.
     """
 
+    if not target.write_routes:
+        return []
     views = _server_views(rel_path)
     reached = []
     for route in target.write_routes:

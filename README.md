@@ -7,7 +7,7 @@ Current version: **0.2.0**
 PrimeKG is not on GitHub: the 0.1.0 adapter pointed at a `kg.csv` that does not exist there. This release downloads PrimeKG 2.1 once from Harvard Dataverse (`nodes.csv` and `edges.csv`, about 395 MB, each checked against a pinned size, MD5 and SHA-256), builds a local SQLite index, and answers `primekg_find_nodes`, `primekg_neighbours` and `primekg_paths` from it with no network call. `primekg_download` is the one tool that reaches the network outside the kit, and Biorouter asks before it runs.
 
 This is a Biorouter extension (a `.brxt` bundle) built on the BRXT adapter kit
-1.0.0. Install it from BAAM in Biorouter, or from a file:
+1.0.1. Install it from BAAM in Biorouter, or from a file:
 
 ```bash
 biorouter extension install dist/primekgagent.brxt

@@ -1,8 +1,8 @@
 {
-  "kit_version": "1.0.0",
+  "kit_version": "1.0.1",
   "files": {
-    "src/primekgagent/_kit/__init__.py": "9d43b5034c956157c726bc1ff065fad3feb0aa28f2fe40cea44520f4a51b2aa0",
-    "src/primekgagent/_kit/safe_http.py": "f961ab758785716d55b885bcd294264fe53f8f9f95192c5d5353c15b8f4805d9",
+    "src/primekgagent/_kit/__init__.py": "760431ac2b58ee1708b84e680c1336af54031a701f355a7c799e9c2f474e59a1",
+    "src/primekgagent/_kit/safe_http.py": "199197d7671c4edf05e35a49ed60d1a72bb2a11979bc25ecb4efda0b1e88166d",
     "src/primekgagent/_kit/spec.py": "b5ca55ebb99f38a1ea932fcb3347bbde20a1c186b04a55bcb25e4596153ad797",
     "src/primekgagent/_kit/tools.py": "5801e4a5d0f90edf9e91bd89f86a6b6e07fc7955bcb168221ce6dd7f99446bb3",
     "tests/kit_testing/__init__.py": "952c691107878f8e29833a9d3c51dfbe1a986d8e3373b666ced0b21096e9481a",
