@@ -2,3 +2,11 @@ PrimeKGAgent
 Copyright 2026 Baranzini Lab, University of California, San Francisco
 
 Licensed under the Apache License, Version 2.0.
+
+Built with the Biorouter BRXT adapter kit 1.0.0 (Apache-2.0), whose
+files are vendored under src/primekgagent/_kit/ and tests/kit_testing/.
+
+Data used by this extension (not bundled; downloaded once on request):
+- PrimeKG version 2.1, Harvard Dataverse doi:10.7910/DVN/IXA7BM, CC0 1.0.
+  Chandak P, Huang K, Zitnik M. Building a knowledge graph to enable precision
+  medicine. Scientific Data 10, 67 (2023). https://github.com/mims-harvard/PrimeKG

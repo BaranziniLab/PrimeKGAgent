@@ -1,33 +1,33 @@
 {
   "name": "primekgagent",
   "display_name": "PrimeKGAgent",
-  "description": "MCP adapter for PrimeKG-style biomedical knowledge graph files and APIs, with guarded metadata lookup and graph-resource summaries.",
-  "version": "0.1.0",
+  "description": "Download the PrimeKG precision medicine knowledge graph once from Harvard Dataverse and query it on this computer: node lookup, neighbours and short paths between drugs, diseases, genes and phenotypes. No key needed.",
+  "version": "0.2.0",
   "entry_point": "primekgagent",
   "repository": "https://github.com/BaranziniLab/PrimeKGAgent",
   "license": "Apache-2.0",
-  "tools_count": 6,
+  "tools_count": 7,
   "env_vars": [
     {
-      "key": "PRIMEKG_BASE_URL",
+      "key": "PRIMEKG_DATA_DIR",
       "required": false,
       "auto_propagate": true,
-      "description": "Optional PrimeKG API or raw data base URL",
+      "description": "Optional folder for the local PrimeKG copy (about 700 MB). Default: a folder beside Biorouter's data, kept across updates.",
       "secret": false
     },
     {
       "key": "PRIMEKG_LOG_LEVEL",
       "required": false,
       "auto_propagate": true,
+      "default": "INFO",
       "description": "Logging level",
-      "secret": false,
-      "default": "INFO"
+      "secret": false
     }
   ],
   "skills": [
     {
       "name": "primekg-knowledge-graph",
-      "description": "Use PrimeKGAgent for PrimeKG biomedical graph workflows with provenance-first, guarded tool/API access."
+      "description": "How to call PrimeKGAgent's tools: download PrimeKG once, then look up nodes, neighbours and short paths in the local copy."
     }
   ]
 }

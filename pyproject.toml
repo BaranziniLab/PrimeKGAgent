@@ -4,16 +4,16 @@ build-backend = "hatchling.build"
 
 [project]
 name = "primekgagent"
-version = "0.1.0"
-description = "MCP adapter for PrimeKG-style biomedical knowledge graph files and APIs, with guarded metadata lookup and graph-resource summaries."
+version = "0.2.0"
+description = "Download the PrimeKG precision medicine knowledge graph once from Harvard Dataverse and query it on this computer: node lookup, neighbours and short paths between drugs, diseases, genes and phenotypes. No key needed."
 readme = "README.md"
 license = {text = "Apache-2.0"}
 authors = [{name = "Baranzini Lab", email = "wanjun.gu@ucsf.edu"}]
 requires-python = ">=3.11"
 dependencies = [
-    "fastmcp>=2.11.2",
-    "httpx>=0.28.1",
-    "pydantic>=2.11.7",
+    "fastmcp>=4.0,<5",
+    "httpx>=0.28.1,<1",
+    "pydantic>=2.11.7,<3",
 ]
 
 [project.scripts]
@@ -23,6 +23,7 @@ primekgagent = "primekgagent.cli:main"
 packages = ["src/primekgagent"]
 
 [tool.uv]
+# cryptography (pulled in by fastmcp) has no Intel Mac wheels from 49 on.
 constraint-dependencies = [
     "cryptography<49; sys_platform == 'darwin' and platform_machine == 'x86_64'",
 ]

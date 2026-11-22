@@ -1,0 +1,25 @@
+{
+  "kit_spec": 1,
+  "service": "primekg",
+  "service_title": "PrimeKG on Harvard Dataverse",
+  "kind": "adapter",
+  "log_level_env": "PRIMEKG_LOG_LEVEL",
+  "instructions": "PrimeKGAgent answers from a local copy of PrimeKG 2.1 (doi:10.7910/DVN/IXA7BM, CC0). Call primekg_data_status first; if ready is false, call primekg_download once (Biorouter asks the person: about 395 MB) and poll primekg_data_status until ready. Then use primekg_find_nodes to get node_index values, primekg_neighbours for a node's neighbours by relation, and primekg_paths for shortest paths of up to three edges. These queries make no network call. primekg_get reads dataset metadata from the Dataverse API only.",
+  "targets": [
+    {
+      "name": "dataverse",
+      "title": "Harvard Dataverse API (PrimeKG dataset metadata)",
+      "base_url": "https://dataverse.harvard.edu/api",
+      "get_routes": [
+        "/datasets/**",
+        "/info/**"
+      ],
+      "documentation": "https://guides.dataverse.org/en/latest/api/native-api.html",
+      "examples": [
+        "/datasets/:persistentId/"
+      ]
+    }
+  ],
+  "id": "primekgagent",
+  "display_name": "PrimeKGAgent"
+}

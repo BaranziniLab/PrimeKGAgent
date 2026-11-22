@@ -1,0 +1,13 @@
+{
+  "kit_version": "1.0.0",
+  "files": {
+    "src/primekgagent/_kit/__init__.py": "9d43b5034c956157c726bc1ff065fad3feb0aa28f2fe40cea44520f4a51b2aa0",
+    "src/primekgagent/_kit/safe_http.py": "f961ab758785716d55b885bcd294264fe53f8f9f95192c5d5353c15b8f4805d9",
+    "src/primekgagent/_kit/spec.py": "b5ca55ebb99f38a1ea932fcb3347bbde20a1c186b04a55bcb25e4596153ad797",
+    "src/primekgagent/_kit/tools.py": "5801e4a5d0f90edf9e91bd89f86a6b6e07fc7955bcb168221ce6dd7f99446bb3",
+    "tests/kit_testing/__init__.py": "952c691107878f8e29833a9d3c51dfbe1a986d8e3373b666ced0b21096e9481a",
+    "tests/kit_testing/echo_server.py": "ae0a9ae842e013779b3c05391d5073e37173ef1d772ba0551551b0cd1f4d66cf",
+    "tests/kit_testing/leak_suite.py": "3a6a0eb5bb40f9f35389267ff90d2257cd0b5931239b4d169072e3ffe7d7e186",
+    "tests/kit_testing/stdio_probe.py": "c84c6da4f0abb4356ea9488fafec388b1b05dc8a2a128ad7d654c42d85e429b9"
+  }
+}

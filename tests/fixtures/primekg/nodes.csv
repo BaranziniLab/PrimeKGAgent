@@ -1,0 +1,10 @@
+node_index,node_id,node_type,node_name,node_source
+0,1956,gene/protein,EGFR,NCBI
+1,DB08916,drug,Afatinib,DrugBank
+2,5044,disease,lung adenocarcinoma,MONDO
+3,DB00945,drug,Acetylsalicylic acid,DrugBank
+4,5742,gene/protein,PTGS1,NCBI
+5,5743,gene/protein,PTGS2,NCBI
+6,0001,disease,"pain, chronic",MONDO
+7,2064,gene/protein,ERBB2,NCBI
+8,D001241,exposure,Aspirin,CTD
